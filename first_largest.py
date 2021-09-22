@@ -2,11 +2,13 @@
 Python program to find the largest element and its location.
 """
 
-def largest_element(a):
+def largest_element(a, loc=False):
     """ Return the largest element of a sequence a.
     """
 
-    return None
+    if(loc):
+        return (max(a), a.index(max(a)))
+    return max(a)
 
 
 if __name__ == "__main__":
